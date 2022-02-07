@@ -29,13 +29,12 @@ public class SingleActiveConsumer {
                     .builder()
                     .messageHandler(
                         (context, message) -> {
-                          System.out.println("Consumer " + i + " receive a message.");
+                          System.out.println("Consumer " + i + " received a message.");
                         })
                     .build();
               });
       Scanner keyboard = new Scanner(System.in);
       keyboard.nextLine();
     }
-
   }
 }
