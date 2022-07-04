@@ -50,17 +50,17 @@
   </build>
 
   <repositories>
-  <repository>
-  <id>rabbitmq-maven-snapshots</id>
-  <url>https://dl.cloudsmith.io/public/rabbitmq/maven-snapshots/maven/</url>
-  <releases>
-  <enabled>false</enabled>
-  </releases>
-  <snapshots>
-  <enabled>true</enabled>
-  <updatePolicy>always</updatePolicy>
-  </snapshots>
-  </repository>
+    <repository>
+      <id>rabbitmq-maven-snapshots</id>
+      <url>https://dl.cloudsmith.io/public/rabbitmq/maven-snapshots/maven/</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </repository>
   </repositories>
 
 </project>
