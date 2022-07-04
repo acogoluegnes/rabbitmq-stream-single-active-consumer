@@ -20,7 +20,7 @@ public class SingleActiveConsumer {
       IntStream.range(0, 3)
           .forEach(
               i -> {
-                System.out.println("Starting consumer " + i);
+                System.out.println("Starting consumer instance " + i);
                 environment.consumerBuilder().stream(stream)
                     .name(reference)
                     .singleActiveConsumer()
