@@ -50,16 +50,17 @@
   </build>
 
   <repositories>
-    <repository>
-      <id>github</id>
-      <url>https://maven.pkg.github.com/rabbitmq/rabbitmq-stream-java-client</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
+  <repository>
+  <id>rabbitmq-maven-snapshots</id>
+  <url>https://dl.cloudsmith.io/public/rabbitmq/maven-snapshots/maven/</url>
+  <releases>
+  <enabled>false</enabled>
+  </releases>
+  <snapshots>
+  <enabled>true</enabled>
+  <updatePolicy>always</updatePolicy>
+  </snapshots>
+  </repository>
   </repositories>
 
 </project>
