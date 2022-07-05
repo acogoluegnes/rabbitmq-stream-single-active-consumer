@@ -1,6 +1,7 @@
 package com.rabbitmq.stream;
 
 import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.IntStream;
 
 public class SingleActiveConsumer {
@@ -17,6 +18,7 @@ public class SingleActiveConsumer {
       environment.streamCreator().stream(stream).create();
       System.out.println("Created stream " + stream);
 
+      AtomicLong sequence = new AtomicLong(0);
       IntStream.range(0, 3)
           .forEach(
               i -> {
@@ -29,7 +31,10 @@ public class SingleActiveConsumer {
                     .builder()
                     .messageHandler(
                         (context, message) -> {
-                          System.out.println("Consumer " + i + " received a message.");
+                          System.out.printf(
+                              "Consumer instance %d received a message (%d).%n",
+                              i, sequence.incrementAndGet()
+                          );
                         })
                     .build();
               });
