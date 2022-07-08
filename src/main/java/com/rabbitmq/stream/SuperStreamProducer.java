@@ -13,7 +13,7 @@ public class SuperStreamProducer {
       System.out.println("Starting producer");
 
       Producer producer =
-          environment.producerBuilder().stream(superStream)
+          environment.producerBuilder().superStream(superStream)
               .routing(msg -> msg.getProperties().getMessageIdAsString())
               .producerBuilder()
               .build();
