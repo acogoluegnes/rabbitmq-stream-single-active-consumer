@@ -8,7 +8,9 @@ See [blog post](https://blog.rabbitmq.com/posts/2022/07/rabbitmq-3-11-feature-pr
 
 ### Super Streams
 
-Related blog post: TODO
+See [blog post](https://blog.rabbitmq.com/posts/2022/07/rabbitmq-3-11-feature-preview-super-streams/).
+
+Demonstration steps below.
 
 #### Start the broker
 
