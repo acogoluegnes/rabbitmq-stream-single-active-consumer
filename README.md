@@ -64,7 +64,7 @@ These are client-side features.
 The client library registers a consumer to each partition (stream) of the super stream.
 Consider this program as an instance/VM/container/pod of a user application.
 
-NB: more information on the single active consumer and super stream support in the [stream Java client documentation](https://rabbitmq.github.io/rabbitmq-stream-java-client/sac/htmlsingle/#super-stream-sac)
+NB: more information on the single active consumer and super stream support in the [stream Java client documentation](https://rabbitmq.github.io/rabbitmq-stream-java-client/snapshot/htmlsingle/#super-stream-sac)
 
 Start the publishing application:
 
