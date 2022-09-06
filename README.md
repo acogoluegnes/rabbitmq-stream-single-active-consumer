@@ -347,7 +347,7 @@ Listing group consumers ...
 └─────────────────┴─────────────────────────────────────┴──────────┘
 ```
 
-Stop `instance-1` now. `instance-2` should take now the 3 partitions.
+Stop `instance-2` now. `instance-3` should take now the 3 partitions.
 
 Stop `instance-3`.
 
